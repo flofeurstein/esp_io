@@ -75,8 +75,8 @@ srv:listen(80,function(conn)
         buf = buf..' integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">'
         buf = buf..'<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"'
         buf = buf..' integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">'
-        buf = buf..'<script type="text/javascript" src="https://raw.githubusercontent.com/flofeurstein/esp_io/master/js/app.js"></script>'
-        buf = buf..'<script type="text/javascript" src="https://raw.githubusercontent.com/flofeurstein/esp_io/master/js/directives.js"></script>'
+        buf = buf..'<script type="text/javascript" src="https://rawgit.com/flofeurstein/esp_io/master/js/app.js"></script>'
+        buf = buf..'<script type="text/javascript" src="https://rawgit.com/flofeurstein/esp_io/master/js/directives.js"></script>'
         buf = buf..'<title>ESP8266 IO</title></head>\n';
         buf = buf..'<body><h1>ESP8266 IO!</h1>\n';
         buf = buf..'<div ng-repeat="io in ios">{{ io }}</div>\n';
