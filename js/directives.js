@@ -1,6 +1,6 @@
 angular.module('EspIODirective', [])
 .controller('EspIODirController', ['$scope', function($scope) {
-  $scope.ios2={'io1', 'io2', 'io3'};
+  $scope.ios2=['io1', 'io2', 'io3'];
 }])
 .directive('espIOBody', function() {
   return {
