@@ -79,7 +79,8 @@ srv:listen(80,function(conn)
         buf = buf..'<script type="text/javascript" src="https://rawgit.com/flofeurstein/esp_io/master/js/directives.js"></script>'
         buf = buf..'<title>ESP8266 IO</title></head>\n';
         buf = buf..'<body><h1>ESP8266 IO!</h1>\n';
-        buf = buf..'<div ng-repeat="io in ios">{{ io }}</div>\n';
+        buf = buf..'<div ng-controller="EspIOController">\n';
+        buf = buf..'<div ng-repeat="io in ios">{{ io }}</div></div>\n';
         buf = buf..'<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>';
         buf = buf..'<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity='
         buf = buf..'"sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>'
